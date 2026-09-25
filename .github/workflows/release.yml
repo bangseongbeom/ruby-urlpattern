@@ -65,7 +65,7 @@ jobs:
           bundler-cache: true
           ruby-version: ruby
 
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@v8
         with:
           path: artifacts
       - name: Move gems to pkg directory
