@@ -16,13 +16,13 @@ class TestURLPattern < Minitest::Test
   # 2. Copy the content.
   # 3. Paste into `test/fixtures/urlpatterntestdata.json`.
   URLPATTERNTESTDATA = begin
-    UNDERSCORE = { baseURL: :base_url, ignoreCase: :ignore_case }.freeze
+    UNDERSCORE = {baseURL: :base_url, ignoreCase: :ignore_case}.freeze
 
     # `JSON.parse` raises `JSON::ParserError` (incomplete surrogate pair) for some test data.
     # To work around this, use `Oj.strict_load` with `allow_invalid_unicode`.
     Oj.strict_load(File.read(
-                     File.join(__dir__, "fixtures", "urlpatterntestdata.json"), encoding: Encoding::UTF_8
-                   ), { allow_invalid_unicode: true, symbol_keys: true }).map do |entry|
+      File.join(__dir__, "fixtures", "urlpatterntestdata.json"), encoding: Encoding::UTF_8
+    ), {allow_invalid_unicode: true, symbol_keys: true}).map do |entry|
       entry[:pattern]&.map! { |arg| arg.is_a?(Hash) ? arg.transform_keys(UNDERSCORE) : arg }
 
       entry[:inputs]&.map! { |arg| arg.is_a?(Hash) ? arg.transform_keys(UNDERSCORE) : arg }
@@ -57,7 +57,7 @@ class TestURLPattern < Minitest::Test
   private
 
   def skip_if_unsupported(entry)
-    skip if [[{ pathname: "*{}**?" }], ["((?R)):"]].include?(entry[:pattern])
+    skip if [[{pathname: "*{}**?"}], ["((?R)):"]].include?(entry[:pattern])
   end
 
   def assert_expected_obj_error(entry)

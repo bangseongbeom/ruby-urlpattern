@@ -12,6 +12,6 @@ gem "rake-compiler"
 
 gem "minitest", "~> 6.0"
 
-gem "rubocop", "~> 1.91"
+gem "standard", "~> 1.56"
 
 gem "oj", "~> 3.17"

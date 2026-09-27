@@ -5,9 +5,7 @@ require "minitest/test_task"
 
 Minitest::TestTask.create
 
-require "rubocop/rake_task"
-
-RuboCop::RakeTask.new
+require "standard/rake"
 
 require "rb_sys/extensiontask"
 
@@ -24,4 +22,4 @@ task "release:rubygem_push" do
   Dir["pkg/*.gem"].each { |gem| sh "gem", "push", gem }
 end
 
-task default: %i[compile test rubocop]
+task default: %i[compile test standard]

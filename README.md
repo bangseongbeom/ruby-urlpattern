@@ -1,6 +1,6 @@
 # urlpattern
 
-[![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop)
+[![Ruby Code Style](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/standardrb/standard)
 [![Gem Version](https://badge.fury.io/rb/urlpattern.svg)](https://badge.fury.io/rb/urlpattern)
 [![Ruby](https://github.com/bangseongbeom/ruby-urlpattern/actions/workflows/main.yml/badge.svg)](https://github.com/bangseongbeom/ruby-urlpattern/actions/workflows/main.yml)
 
