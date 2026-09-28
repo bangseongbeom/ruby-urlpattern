@@ -1,8 +1,8 @@
 # urlpattern
 
+[![Ruby](https://github.com/bangseongbeom/ruby-urlpattern/actions/workflows/main.yml/badge.svg)](https://github.com/bangseongbeom/ruby-urlpattern/actions/workflows/main.yml)
 [![Ruby Code Style](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/standardrb/standard)
 [![Gem Version](https://badge.fury.io/rb/urlpattern.svg)](https://badge.fury.io/rb/urlpattern)
-[![Ruby](https://github.com/bangseongbeom/ruby-urlpattern/actions/workflows/main.yml/badge.svg)](https://github.com/bangseongbeom/ruby-urlpattern/actions/workflows/main.yml)
 
 An implementation of [the URL Pattern Standard](https://urlpattern.spec.whatwg.org/) for Ruby written in Rust.
 
