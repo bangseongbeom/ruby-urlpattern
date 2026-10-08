@@ -1,7 +1,7 @@
 ## [Unreleased]
 
+- Update Magnus to 0.9.2 (Ruby 4.1 support)
 - Require `rb_sys` `~> 0.9.130`
-- Update `magnus` to 0.9.0 and `regex` to 1.13.1
 
 ## [0.1.1] - 2026-04-24
 
