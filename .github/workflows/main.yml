@@ -29,6 +29,6 @@ jobs:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
           cargo-cache: true
-          rubygems: '4.0.21'
+          rubygems: '4.0.23'
       - name: Run the default task
         run: bundle exec rake
